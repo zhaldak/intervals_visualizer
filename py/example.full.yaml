@@ -1,0 +1,28 @@
+version: 2024-04-11.00
+chart_title: mandatory string
+chart_description: optional string
+chart_metadata: optional string for hrefs, styles and so on (k=v;k=v)(by default, content-type of a pair's value is application/x-www-form-urlencoded)
+rows:
+  - row_title: mandatory string
+    row_description: optional string
+    row_metadata: optional string for hrefs, styles and so on (k=v;k=v)(by default, content-type of a pair's value is application/x-www-form-urlencoded)
+    interval_list:
+      - interval_title: optional string
+        interval_description: optional string
+        interval_metadata: optional string for hrefs, styles and so on (k=v;k=v)(by default, content-type of a pair's value is application/x-www-form-urlencoded)
+        start_point: mandatory any convertible to a number value
+        end_point: optional any convertible to a number value
+  - row_title: thread 8
+    row_description: foo and baz's durations
+    row_metadata: text-color=#00ff00;href=https://example.com
+    interval_list:
+      - interval_title: foo
+        start_point: 10:00:00.000
+        end_point: 10:00:01.123
+      - interval_title: foo::print
+        interval_description: point example. Output: Hello world!
+        interval_metadata: popup_version=1;popup=Hello%20world!
+        start_point: 10:00:00.055
+      - interval_title: baz
+        start_point: 10:00:00.000
+        end_point: 10:00:05.000
